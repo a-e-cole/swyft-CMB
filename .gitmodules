@@ -1,0 +1,3 @@
+[submodule "swyft"]
+	path = swyft
+	url = https://github.com/undark-lab/swyft
