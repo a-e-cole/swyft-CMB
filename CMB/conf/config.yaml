@@ -1,9 +1,0 @@
-train_args:
-  lr_schedule: [1e-3, 1e-4, 1e-5]
-  early_stopping_patience: 5
-tail_args: {}
-head_args: {}
-Ninit: 5000
-max_rounds: 15
-cache: cacheCl.zarr
-Nmax: 1000000
