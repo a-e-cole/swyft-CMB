@@ -1,9 +1,13 @@
 # swyft-CMB
 
-This repository allows one to reproduce computations presented in arXiv: xxxx.xxxx
+This repository allows one to reproduce computations presented in "Fast and Credible Likelihood-Free Cosmology with Truncated Marginal Neural Ratio Estimation," arXiv: xxxx.xxxx. Here we use `swyft` (available at https://github.com/undark-lab-swyft). 
+This repository uses and older commit of `swyft` -- this will be updated (to include parallel simulation and new interface) in the future.
+Install this version by entering the directory and running `pip install -e .`.
+The main simulator relies on the publicly available Boltzmann code `class` https://github.com/lesgourg/class_public/. See that repo for installation details.
 
-Currently the code uses an old version of swyft, included as a submodule. In the near future, notebooks will be updated to use a more recent version of swyft (including parallel simulation and updated interface).
+We include a demonstration notebook in `notebooks/demo-TTTEEE.ipynb`, which performs inference for the
+forecasting CMB simulator and demonstrates the empirical credibility test. Accompanying this is a small datastore (roughly 10,000 samples) with CMB power spectra and BAO measurements.
+This is about 500 MB.
 
-The main simulator relies on the publicly available Boltzmann code class https://github.com/lesgourg/class_public/. See that repo for installation details.
-
-We include as an example a small datastore with CMB power spectra.
+The `HiLLiPoP` likelihood is available at https://github.com/planck-npipe/hillipop. It is quite large.
+Detailed instructions for modifying that code and defining the corresponding simulator will appear here soon.
